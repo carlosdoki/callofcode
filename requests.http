@@ -1,0 +1,66 @@
+####
+POST https://helpcare2.mybluemix.net/users
+Content-Type: application/json
+
+{
+    "name" : "carlos",
+    "email": "carlosdoki@gmail.com"
+}
+
+####
+GET https://helpcare2.mybluemix.net/allusers
+Content-Type: application/json
+
+####
+GET https://helpcare2.mybluemix.net/users?_id=77b4d5b23f7d21f57f597c7b174bda81
+Content-Type: application/json
+
+
+####
+PUT https://helpcare2.mybluemix.net/users
+Content-Type: application/json
+
+{
+    "_id": "77b4d5b23f7d21f57f597c7b174bda81",
+    "_rev": "2-e8168a5a2c2407984729ab343c67a1ae",
+    "name" : "carlos3",
+    "email": "carlosdoki@gmail.com"
+}
+
+####
+DELETE https://helpcare2.mybluemix.net/users
+Content-Type: application/json
+
+{
+    "_id": "671ae7b556f41caa6dff8cf7ff5694cf",
+    "_rev": "1-6d964a20dfb2f26fcb27966c08980c36"
+}
+
+####
+POST https://helpcare2.mybluemix.net/incidentes
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Incidente 1",
+    "description": "Descriçao de ajuda 1",
+    "latitude": 1,
+    "longitude": 1
+}
+
+####
+GET https://helpcare2.mybluemix.net/allincidentes
+Content-Type: application/json
+
+####
+POST https://helpcare2.mybluemix.net/conhecimento
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nome": "ID 4"
+}
+
+####
+GET https://helpcare2.mybluemix.net/allconhecimento
+# Content-Type: application/json
