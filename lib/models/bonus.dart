@@ -15,7 +15,7 @@ List<Bonus> bonus = [
     ids: "dsadkasjd as921882193812",
     rev: "dasjdkasjkdakldj9328293",
     titulo: "Primeiros Socorros",
-    descricao: "1. Batalhão Corpo de Bombeiro. Av. Rangel Pestana, 99.",
+    descricao: "1. Batalhão Corpo de Bombeiro. Av. Rangel...",
     valor: 13.62,
   ),
   Bonus(

@@ -31,6 +31,7 @@ class _BodyState extends State<Body> {
   Future<void> getLocation() async {
     GeolocationStatus geolocationStatus =
         await Geolocator().checkGeolocationPermissionStatus();
+    // print("Geolaction");-23.494124,-46.8388004
     print(geolocationStatus.value);
     if (geolocationStatus.value == 2) {
       StreamSubscription<Position> positionStream = geolocator
@@ -73,19 +74,18 @@ class _BodyState extends State<Body> {
           ),
           Container(
             // width: 300
-            height: SizeConfig.screenHeight - 350,
+            height: SizeConfig.screenHeight - 400,
             // color: Colors.red,
             child: PlatformMap(
               initialCameraPosition: CameraPosition(
-                target:
-                    LatLng(positionActual.latitude, positionActual.longitude),
+                target: LatLng(-23.494124, -46.8388004),
                 zoom: 16.0,
               ),
               markers: Set<Marker>.of(
                 [
                   Marker(
                     markerId: MarkerId('marker_1'),
-                    position: LatLng(47.6, 8.8796),
+                    position: LatLng(-23.494124, -46.8388004),
                     consumeTapEvents: true,
                     infoWindow: InfoWindow(
                       title: 'PlatformMarker',
@@ -111,8 +111,7 @@ class _BodyState extends State<Body> {
                       CameraUpdate.newCameraPosition(
                         CameraPosition(
                           bearing: 270.0,
-                          target: LatLng(positionActual.latitude,
-                              positionActual.longitude),
+                          target: LatLng(-23.494124, -46.8388004),
                           tilt: 30.0,
                           zoom: 18,
                         ),
